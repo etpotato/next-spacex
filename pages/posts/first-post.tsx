@@ -2,10 +2,11 @@ import type { NextPage } from 'next'
 import Link from 'next/link'
 import Head from 'next/head'
 import Script from 'next/script';
+import Layout from '../../components/layout';
 
 const FirstPost: NextPage = () => {
   return (
-    <>
+    <Layout>
       <Head>
         <title>First post</title>
       </Head>
@@ -18,12 +19,7 @@ const FirstPost: NextPage = () => {
         }}
       />
       <h1>First Post</h1>
-      <h2>
-        <Link href="/">
-          <a>Back to home</a>
-        </Link>
-      </h2>
-    </>
+    </Layout>
   );
 }
 
